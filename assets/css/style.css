@@ -3,5 +3,12 @@
     background-repeat:no-repeat;
     background-size: cover;
 }
+.hover-style{
+    border:2px solid red;
+    background-color: aqua;
+    
+}
 
-
+.choice{
+    width: 200px;
+}

@@ -13,65 +13,65 @@
 
     <h1 class="py-5 bg-info text-dark">Totally Trivia Trivia</h1>
 
-    <div class="container">
+    <div class="container" id="startContainer">
         <div class="row">
             <div class="col-12 text-center">
-                <button type="button" class="btn btn-outline-secondary btn-lg bg-info text-dark ">Start</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg bg-info text-dark "
+                    id="startButton">Start</button>
             </div>
         </div>
     </div>
 
-    <div class="container bg-info text-dark">
+    <div class="container bg-info text-dark" id="gameContainer">
         <div class="row">
             <span>Time Remaining:</span>
+            <span id="timeContainer"></span>
         </div>
 
-        <div class="container">
+        <div class="container" id="questionContainer">
             <div class="row">
-                <div>Capital Of Canada </div>
+                <div id="question"> </div>
             </div>
             <div class="row">
                 <ul>
-                    <li>Ottawa</li>
-                    <li>Toronto </li>
-                    <li>Montreal</li>
+                    <li id="choice1" class="choice"></li>
+                    <li id="choice2" class="choice"> </li>
+                    <li id="choice3" class="choice"></li>
                 </ul>
             </div>
         </div>
-        <div class="container bg-info text-dark">
+        <div class="container bg-info text-dark" id="resultContainer">
             <div class="row">
-                <div>Nope!! </div>
+                <div id="cheerText"></div>
             </div>
             <div class="row">
-                <div>The Corect Ansewer Was:</div>
+                <div>The Corect Ansewer Was: <span id="correctAnswer"></span></div>
             </div>
-            <div class="row ">
-                <img width="200px" src="../TriviaGame/assets/images/nope.gif">
+            <div class="row">
+                <img width="200px" id="gif" src="../TriviaGame/assets/images/nope.gif">
             </div>
 
         </div>
-        <div class="container bg-info text-dark">
+        <div class="container bg-info text-dark " id="finalResultContainer">
             <div class="row">
                 <div>All done, Heres How you did!! </div>
             </div>
             <div class="row">
-                <div>Correct Ansewers:</div>
+                <div class="col-6">Correct Ansewers:</div>
+                <div class="col-4" id="correct"></div>
             </div>
             <div class="row">
-                <div>Incorrect Ansewer:</div>
+                <div class="col-6">Incorrect Ansewer:</div>
+                <div class="col-4" id="incorrect"></div>
             </div>
             <div class="row">
-                <div>Unansewered:</div>
+                <div class="col-6">Unansewered:</div>
+                <div class="col-4" id="unansewered"></div>
             </div>
             <div class="row">
-                <div>Start Over</div>
+                <button id="getStart">Start Over</button>
             </div>
-
-
-
         </div>
-
-        <script src="assets/javascript/app.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
@@ -81,6 +81,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
+        <script src="assets/javascript/app.js"></script>
 
 </body>
 
