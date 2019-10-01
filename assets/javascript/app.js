@@ -28,6 +28,13 @@ var questions = [
         choice2: "Bruges",
         question: "What is the capital of Belgium?",
         corectAnswer: "Brussels"
+    },
+    {
+        choice3: "Paris",
+        choice1: "bordeaux",
+        choice2: "Nice",
+        question: "What is the capital of France",
+        corectAnswer: "Paris"
     }
 ]
 
